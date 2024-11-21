@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Location
+metadata:
+  name: backstage-templates-on-eks
+  description: A public collection of Backstage templates
+spec:
+  targets:
+    - ./jupyterhub-on-eks/template-jupyterhub-on-eks.yaml
+    - ./spark-on-eks/template-data-on-eks.yaml
+    - ./eks-observability-accelerator/template-infra-monitoring.yaml
+    - ./s3-bucket/template-s3-bucket.yaml
+    - ./eks-nvdia-gpu-efa/template-nvidia-gpu-efa.yaml
+    - ./serverless-microservice/template-serverless-microservice.yaml
+    - ./serverless-sqs-lambda/template-serverless-sqs-lambda.yaml

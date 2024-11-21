@@ -1,0 +1,14 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: eks-cluster-${{values.name}}
+  description: NVDIA GPU EFA for ${{ values.name }}
+  annotations:
+    backstage.io/kubernetes-namespace: ${{values.namespace}}
+    terraform.cnoe.io/secret-name: tfstate-default-eks-cluster-gpu-${{values.name}}
+    terraform.cnoe.io/secret-namespace: ${{values.namespace}}
+spec:
+  type: kubernetes-cluster
+  lifecycle: experimental
+  owner: guest
+  system: ${{values.name | dump}}
