@@ -129,8 +129,9 @@ Use the credentials from the above secrets output.
 
 - Login to Argo: https://cnoe.localtest.me:8443/argocd
 - Login to Backstage: https://cnoe.localtest.me:8443/
+> Backstage Login Info:
 > Username: user1
-The password is **USER_PASSWORD** under namespace keycloak.
+> The password is **USER_PASSWORD** under namespace keycloak.
 - Login to Gitea: https://cnoe.localtest.me:8443/gitea
 
 
