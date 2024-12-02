@@ -6,7 +6,8 @@ metadata:
   annotations:
     argocd.argoproj.io/sync-wave: "1"
 spec:
-  interval: 30s
-  url: https://github.com/aws-samples/serverless-patterns.git 
+  interval: 5m
+  timeout: 3m
+  url: https://github.com/aws-samples/serverless-patterns.git
   ref:
     branch: main
