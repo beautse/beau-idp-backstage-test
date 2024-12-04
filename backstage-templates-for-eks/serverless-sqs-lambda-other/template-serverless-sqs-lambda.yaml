@@ -1,7 +1,7 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  description: Create a Serverless SQS Lambda Integration
+  description: Create a Serverless SQS Lambda Integration test for the other one
   name: serverless-sqs-lambda-other
   title: Serverless SQS Lambda Integration Other
 spec:
