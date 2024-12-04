@@ -3,7 +3,7 @@ kind: Template
 metadata:
   description: Create a Serverless SQS Lambda Integration
   name: serverless-sqs-lambda-other
-  title: Serverless SQS Lambda Integration
+  title: Serverless SQS Lambda Integration Other
 spec:
   owner: guest
   type: service
