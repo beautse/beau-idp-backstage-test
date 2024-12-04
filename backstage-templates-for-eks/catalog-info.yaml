@@ -12,3 +12,4 @@ spec:
     - ./eks-nvdia-gpu-efa/template-nvidia-gpu-efa.yaml
     - ./serverless-microservice/template-serverless-microservice.yaml
     - ./serverless-sqs-lambda/template-serverless-sqs-lambda.yaml
+    - ./serverless-sqs-lambda-other/template-serverless-sqs-lambda-other.yaml
