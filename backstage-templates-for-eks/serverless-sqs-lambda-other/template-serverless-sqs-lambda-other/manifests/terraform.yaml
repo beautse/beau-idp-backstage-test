@@ -20,6 +20,16 @@ spec:
       name: "serverless-sqs-lambda-other-${{values.name}}-tf-cm"
   runnerPodTemplate:
     spec:
+      containers:
+        - name: terraform
+          image: ghcr.io/weaveworks/tf-runner:v0.15.2
+          command:
+            - /bin/sh
+            - -c
+          args:
+            - |
+              apt-get update && apt-get install -y python3 python3-pip
+              terraform-runner
       envFrom:
         - secretRef:
             name: aws-credentials
