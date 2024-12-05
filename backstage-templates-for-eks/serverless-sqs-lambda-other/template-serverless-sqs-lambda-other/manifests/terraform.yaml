@@ -29,7 +29,14 @@ spec:
           args:
             - |
               apt-get update && apt-get install -y python3 python3-pip
+              pip3 install --no-cache-dir -r ${path.module}/requirements.txt
               terraform-runner
+      volumes:
+        - name: terraform-config
+          emptyDir: {}
+      volumeMounts:
+        - name: terraform-config
+          mountPath: /tmp/terraform
       envFrom:
         - secretRef:
             name: aws-credentials
