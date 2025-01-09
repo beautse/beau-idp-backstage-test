@@ -1,7 +1,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
-  name: "s3-lambda-terraform-${{values.name}}-git-repository"
+  name: "eventbridge-schedule-to-lambda-terraform-go-${{values.name}}-git-repository"
   namespace: flux-system
   annotations:
     argocd.argoproj.io/sync-wave: "1"
