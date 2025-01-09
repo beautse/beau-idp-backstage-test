@@ -13,3 +13,4 @@ spec:
     - ./serverless-microservice/template-serverless-microservice.yaml
     - ./serverless-sqs-lambda/template-serverless-sqs-lambda.yaml
     - ./serverless-sqs-lambda-other/template-serverless-sqs-lambda-other.yaml
+    - ./s3-lambda-terraform/template-s3-lambda-terraform.yaml

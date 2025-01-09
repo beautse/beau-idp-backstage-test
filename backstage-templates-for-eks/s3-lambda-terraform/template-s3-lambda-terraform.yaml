@@ -1,9 +1,9 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  description: Create an S3 Lambda integration
-  name: terraform-s3-lambda
-  title: S3 Lambda
+  description: Create an S3 to Lambda with Terraform
+  name: s3-lambda-terraform
+  title: S3 Lambda Terraform
 spec:
   owner: guest
   type: service
@@ -35,7 +35,7 @@ spec:
     - action: fetch:template
       id: fetch-base
       input:
-        url: ./terraform-s3-lambda/
+        url: ./template-s3-lambda-terraform/
         values:
           adminRoleName: ${{parameters.adminRoleName}}
           name: ${{parameters.tfVars.name}}
