@@ -1,23 +1,23 @@
 apiVersion: infra.contrib.fluxcd.io/v1alpha2
 kind: Terraform
 metadata:
-  name: eventbridge-schedule-to-lambda-terraform-go-${{values.name}}
+  name: stepfunctions-bedrock-terraform-${{values.name}}
   namespace: flux-system
   annotations:
     argocd.argoproj.io/sync-wave: "2"
 spec:
-  path: ./eventbridge-schedule-to-lambda-terraform-go
+  path: ./template-stepfunctions-bedrock-terraform
   approvePlan: auto
   retryInterval: 10s
   interval: 2m
   destroyResourcesOnDeletion: true
   sourceRef:
     kind: GitRepository
-    name: "eventbridge-schedule-to-lambda-terraform-go-${{values.name}}-git-repository"
+    name: "stepfunctions-bedrock-terraform-${{values.name}}-git-repository"
     namespace: flux-system
   varsFrom:
     - kind: ConfigMap
-      name: "eventbridge-schedule-to-lambda-terraform-go-${{values.name}}-tf-cm"
+      name: "stepfunctions-bedrock-terraform-${{values.name}}-tf-cm"
   runnerPodTemplate:
     spec:
       envFrom:

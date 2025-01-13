@@ -1,9 +1,9 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  description: Create an EventBridge Schedule to Lambda Terraform Go Template
-  name: eventbridge-schedule-to-lambda-terraform-go
-  title: Event Bridge Schedule to Lambda Terraform Go Template
+  description: Create a Step Function to Bedrock model invocation
+  name: stepfunctions-bedrock-terraform
+  title: StepFunction to Bedrock Template
 spec:
   owner: guest
   type: service
@@ -35,7 +35,7 @@ spec:
     - action: fetch:template
       id: fetch-base
       input:
-        url: ./template-eventbridge-schedule-to-lambda-terraform-go/
+        url: ./template-stepfunctions-bedrock-terraform/
         values:
           adminRoleName: ${{parameters.adminRoleName}}
           name: ${{parameters.tfVars.name}}

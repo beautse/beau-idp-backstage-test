@@ -14,6 +14,5 @@ spec:
     - ./serverless-sqs-lambda/template-serverless-sqs-lambda.yaml
     - ./serverless-sqs-lambda-other/template-serverless-sqs-lambda-other.yaml
     - ./s3-lambda-terraform/template-s3-lambda-terraform.yaml
-    - ./eventbridge-schedule-to-lambda-terraform-go/template-eventbridge-schedule-to-lambda-terraform-go.yaml
-    - ./eventbridge-schedule-to-lambda-terraform-java/template-eventbridge-schedule-to-lambda-terraform-java.yaml
     - ./eventbridge-schedule-to-lambda-terraform-python/template-eventbridge-schedule-to-lambda-terraform-python.yaml
+    - ./stepfunctions-bedrock-terraform/template-stepfunctions-bedrock-terraform.yaml
