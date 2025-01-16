@@ -1,0 +1,25 @@
+apiVersion: infra.contrib.fluxcd.io/v1alpha2
+kind: Terraform
+metadata:
+  name: appsync-bedrock-${{values.name}}
+  namespace: flux-system
+  annotations:
+    argocd.argoproj.io/sync-wave: "2"
+spec:
+  path: ./appsync-bedrock
+  approvePlan: auto
+  retryInterval: 10s
+  interval: 2m
+  destroyResourcesOnDeletion: true
+  sourceRef:
+    kind: GitRepository
+    name: "appsync-bedrock-${{values.name}}-git-repository"
+    namespace: flux-system
+  varsFrom:
+    - kind: ConfigMap
+      name: "appsync-bedrock-${{values.name}}-tf-cm"
+  runnerPodTemplate:
+    spec:
+      envFrom:
+        - secretRef:
+            name: aws-credentials
