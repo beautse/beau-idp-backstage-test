@@ -1,23 +1,23 @@
 apiVersion: infra.contrib.fluxcd.io/v1alpha2
 kind: Terraform
 metadata:
-  name: rds-sns-event-notification-terraform-${{values.name}}
+  name: s3-eventbridge-terraform-${{values.name}}
   namespace: flux-system
   annotations:
     argocd.argoproj.io/sync-wave: "2"
 spec:
-  path: ./rds-sns-event-notification-terraform
+  path: ./s3-eventbridge-terraform
   approvePlan: auto
   retryInterval: 10s
   interval: 2m
   destroyResourcesOnDeletion: true
   sourceRef:
     kind: GitRepository
-    name: "rds-sns-event-notification-terraform-${{values.name}}-git-repository"
+    name: "s3-eventbridge-terraform-${{values.name}}-git-repository"
     namespace: flux-system
   varsFrom:
     - kind: ConfigMap
-      name: "rds-sns-event-notification-terraform-${{values.name}}-tf-cm"
+      name: "s3-eventbridge-terraform-${{values.name}}-tf-cm"
   runnerPodTemplate:
     spec:
       envFrom:

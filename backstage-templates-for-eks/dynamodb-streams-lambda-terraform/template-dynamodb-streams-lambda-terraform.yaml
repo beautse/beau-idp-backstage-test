@@ -1,9 +1,9 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  description: Create an RDS SNS Event Notification
-  name: rds-sns-event-notification-terraform
-  title: RDS SNS Event Notification Terraform Template
+  description: Create a dynamoDB Stream to Lambda
+  name: dynamodb-streams-lambda-terraform
+  title: DynamoDB Streams Lambda Terraform Template
 spec:
   owner: guest
   type: service

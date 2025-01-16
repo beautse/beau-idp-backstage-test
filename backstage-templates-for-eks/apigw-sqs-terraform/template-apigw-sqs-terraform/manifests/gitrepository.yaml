@@ -1,7 +1,7 @@
 apiVersion: source.toolkit.fluxcd.io/v1
 kind: GitRepository
 metadata:
-  name: "appsync-bedrock-${{values.name}}-git-repository"
+  name: "apigw-sqs-terraform-${{values.name}}-git-repository"
   namespace: flux-system
   annotations:
     argocd.argoproj.io/sync-wave: "1"

@@ -1,9 +1,9 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  description: Create a new AppSync Bedrock
-  name: appsync-bedrock
-  title: AppSync Bedrock Template
+  description: Create an API Gateway SQS Terraform template
+  name: apigw-sqs-terraform
+  title: API Gateway SQS Terraform Template
 spec:
   owner: guest
   type: service
@@ -35,7 +35,7 @@ spec:
     - action: fetch:template
       id: fetch-base
       input:
-        url: ./template-appsync-bedrock/
+        url: ./template-apigw-sqs-terraform/
         values:
           adminRoleName: ${{parameters.adminRoleName}}
           name: ${{parameters.tfVars.name}}

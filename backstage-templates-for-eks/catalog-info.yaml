@@ -16,5 +16,4 @@ spec:
     - ./s3-lambda-terraform/template-s3-lambda-terraform.yaml
     - ./eventbridge-schedule-to-lambda-terraform-python/template-eventbridge-schedule-to-lambda-terraform-python.yaml
     - ./stepfunctions-bedrock-terraform/template-stepfunctions-bedrock-terraform.yaml
-    - ./appsync-bedrock/template-appsync-bedrock.yaml
-    - ./rds-sns-event-notification-terraform/template-rds-sns-event-notification-terraform.yaml
+    - ./apigw-sqs-terraform/template-apigw-sqs-terraform.yaml
