@@ -1,9 +1,9 @@
 apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
-  description: Create an S3 to Lambda with Terraform
-  name: s3-lambda-terraform
-  title: S3 Lambda Terraform
+  description: Create an S3 Eventbridge Integration
+  name: s3-eventbridge-terraform
+  title: S3 Eventbridge Terraform
 spec:
   owner: guest
   type: service
