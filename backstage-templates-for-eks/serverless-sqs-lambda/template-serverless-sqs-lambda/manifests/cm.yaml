@@ -1,9 +1,0 @@
-apiVersion: v1
-kind: ConfigMap
-metadata:
-  name: "serverless-sqs-lambda-${{values.name}}-tf-cm"
-  namespace: flux-system
-  annotations:
-    argocd.argoproj.io/sync-wave: "0"
-data:
-  ${{ values.tfVars | dump }}

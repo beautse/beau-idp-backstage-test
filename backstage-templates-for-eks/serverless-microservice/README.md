@@ -1,6 +1,6 @@
-# Serverless Microservice
+# S3 Lambda Terraform
 
-This pattern demonstrates a [Serverless Microservice](https://github.com/aws-samples/appmod-partners-serverless/tree/main/serverless-microservice) built using Amazon API Gateway, AWS Lambda, and Amazon DynamoDB.
+This pattern demonstrates a [S3 Lambda Integration](https://github.com/aws-samples/appmod-partners-serverless/tree/main/serverless-microservice) built using Amazon API Gateway, AWS Lambda, and Amazon DynamoDB.
 
 ## Prerequisite
 
